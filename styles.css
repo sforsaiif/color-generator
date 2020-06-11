@@ -1,0 +1,105 @@
+:root {
+    --primary-color:rgb(12, 11, 11);
+    --secondar-color:white;
+}
+
+body {
+    margin:0;
+    background-color: rgb(236, 233, 233);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+nav{
+    background-color: var(--primary-color);
+}
+.nav-bar h1 {
+    color:var(--secondar-color);
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color:var(--secondar-color);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color:rgb(209, 207, 212);
+}
+
+.container {
+    background-color: rgb(12, 11, 11);
+    width:45vw;
+    padding: 10px;
+    color:var(--secondar-color);
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:140px;
+    border-radius: 10px;
+}
+
+.container h1, span{
+    font-size: 2.4vw;
+}
+
+.container span{
+    color:rgb(241, 0, 101);
+}
+
+.btn-hero {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn {
+    font-size:40px;
+    width:200px;
+    height:75px;
+    border: 2px solid rgb(12, 11, 11);
+    border-radius:10px;
+    cursor: pointer;
+    background-color: inherit;
+}
+
+.btn:hover {
+    background-color:rgb(12, 11, 11);
+    color:white;
+}
+
+
+p {
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container{
+        width:90%;
+    }
+    .container h1, span{
+        font-size:18px;
+    }
+
+    .nav-bar h1{
+        font-size:18px;
+    }
+  }
+
+
